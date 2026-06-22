@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de incidencias</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <h1>Gestor de incidencias</h1>
+    </header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <!-- FORMULARIO DE INCIDENCIAS -->
+      <section>
+        <form id="incident-form">
+          <!-- prettier-ignore -->
+          <input type="text" id="title" placeholder="Título de la incidencia" required>
+          <!-- prettier-ignore -->
+          <input
+            type="text" id="description" placeholder="Descripcion de la incidencia" required />
+          <select id="status">
+            <option value="pendiente">Pendiente</option>
+            <option value="en_progreso">En progreso</option>
+            <option value="resuelta">Resuelta</option>
+          </select>
+          <button type="submit">Añadir incidencia</button>
+        </form>
+      </section>
+      <section>
+        <label for="filter">Filtrar:</label>
+        <select id="filter">
+          <option value="all">Todas</option>
+          <option value="pendiente">Pendientes</option>
+          <option value="en_progreso">En progreso</option>
+          <option value="resuelta">Resueltas</option>
+        </select>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Descripción</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="incident-list">
+            <!-- Las incidencias se agregarán aquí dinámicamente -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>DBVtech &copy; 2026 Gestor de Incidencias</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
