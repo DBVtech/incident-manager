@@ -1,0 +1,142 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #38bdf8; /* azul eléctrico */
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+/* SECCIONES */
+section {
+  margin-bottom: 20px;
+}
+
+/* FORMULARIO */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+form input,
+form select {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* BOTÓN */
+button {
+  padding: 10px 15px;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* FILTRO */
+#filter {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* CABECERA TABLA */
+thead {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* FILAS */
+tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s;
+}
+
+tbody tr:hover {
+  background: rgba(56, 189, 248, 0.2);
+}
+
+/* ESTADOS (CLASES PARA FUTURO JS) */
+.pendiente {
+  color: #facc15; /* amarillo */
+  font-weight: bold;
+}
+
+.en_progreso {
+  color: #38bdf8; /* azul */
+  font-weight: bold;
+}
+
+.resuelta {
+  color: #22c55e; /* verde */
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
